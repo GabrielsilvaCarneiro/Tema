@@ -1,0 +1,331 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: white;
+    color: black; 
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.modo-escuro{
+    background-color: black; color: white; 
+}
+
+
+.switch {
+    display: block;
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+ 
+    margin-left: 50px;
+
+    --size-of-icon: 1.4em;
+   
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon,1.4em);
+    width: var(--size-of-icon,1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset,0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg,#ffffff, #282828 60%);
+    ;
+   transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #000000;
+  }
+  
+  input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+    background: #000000;
+   
+    box-shadow: inset -3px -2px 5px -1px #b700ff, inset -10px -4px 0 0 #000000;
+  }
+
+
+  @font-face {
+    font-family: Sofia;
+    src: url(SofiaSans-ExtraLightItalic.ttf);
+}
+
+* { 
+    text-decoration: none;
+    font-family: 'Sofia';
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 150px;
+}
+
+.menu a {
+    color: white;
+    margin-right: 40px;
+    margin: 0 20px;
+    font-size: 30px;
+    font-family: 'Sofia';
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+    margin-right: 50px;
+}
+
+#header {
+    background-color: #910DA7;
+    padding: 25px;
+
+}
+
+.nome {
+    color: white;
+    font-size: 52px;
+    font-family: 'Sofia';
+    margin-top: -10px;
+}
+
+.span1 {
+    color: #70FF00;
+}
+
+img {
+    height: 90px;
+    width: auto;
+
+}
+
+button {
+    background: transparent;
+    border: 0;
+}
+
+
+.main1 {
+    height: 750px;
+    background-color: #910DA7;
+
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 150px;
+    height: 750px;
+}
+
+.texto1 {
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    color: white;
+    font-family: 'Sofia';
+    font-size: 22px;
+    margin-right: 100px;
+
+}
+
+
+.img-1 {
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: -35px -35px #6fff00;
+    ;
+}
+
+.laranja {
+    margin: 0 220px;
+    margin-top: 70px;
+    color: #ff4000d2;
+    font-weight: 600;
+    font-family: 'Sofia';
+}
+
+
+.container3 {
+    width: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 350px;
+}
+
+.containerdois h2 {
+    padding: 5px;
+}
+
+.item img {
+    text-align: center;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.negrito {
+    font-style: oblique;
+    color: #ff4000;
+}
+
+.container3 h2 {
+    padding: 15px;
+}
+
+.main3 {
+    height: 600px;
+    background-color: #910DA7;
+}
+
+.camera {
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 200px;
+    margin-top: 30px;
+
+
+}
+
+.container4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 200px;
+}
+
+.blog {
+    font-family: 'Sofia';
+    color: #6fff00c4;
+}
+
+.nosso-blog {
+    font-style: oblique;
+    color: #6fff00;
+}
+
+#camera {
+    height: 400px;
+}
+
+
+
+
+.main4 {
+    height: 700px;
+}
+
+
+.forms {
+    display: flex;
+    align-items: center;
+}
+
+.form-contato {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+}
+
+form {
+    display: grid;
+}
+
+input {
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+}
+
+textarea {
+    background-color: #D9D9D9;
+    border: none;
+}
+
+.form-contato img {
+    height: 400px;
+    width: auto;
+}
+
+button {
+    background-color: #910DA7;
+    color: white;
+    border-radius: 60px;
+    width: 120px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 17px;
+}
+
+.final {
+    background-color: #910DA7;
+    height: 230px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.final h1 {
+    margin-top: 45px;
+}
+
+label {
+    font-size: 20px;
+}
+
+
+.começoEscuro {
+    background-color: #910DA7;
+}
+
+.preto{
+  color: orangered; margin-left: 5px;
+}
